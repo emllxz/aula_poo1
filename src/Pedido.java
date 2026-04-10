@@ -3,7 +3,6 @@ import java.util.List;
 
 public class Pedido {
     private int idPedido;
-
     private Cliente cliente;
     private Entregador entregador;
 
@@ -13,6 +12,11 @@ public class Pedido {
         this.idPedido = idPedido;
         this.cliente = cliente;
     }
+
+    public int getId(){
+        return idPedido;
+    }
+
     public void adicionarItem(ItensPedido item){
         itens.add(item);
     }
